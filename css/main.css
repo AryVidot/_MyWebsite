@@ -137,7 +137,7 @@ h3 {
 /* ===============================
 LAYOUT ====================== */
 img {
-  height: 2.5em;
+  height: 4.5em;
   border-radius: 50%;
 }
 .ctnr {
@@ -159,6 +159,11 @@ img {
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 /* ==========================================================================
