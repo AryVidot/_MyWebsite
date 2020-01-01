@@ -98,20 +98,32 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*  -------------- General Style ------------- */
-
+* {
+  margin: 0;
+  padding: 0;
+}
 /* heading: Proza Libre */
 /* body: Open Sans*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 1rem;
   font-family: "Proza Libre", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  margin: 0.7em;
+  /* font-family: "Open Sans", sans-serif; */
+  min-width: 360px;
+  display: block;
 }
 
-.container {
+.ctnr {
   width: 100%;
   box-sizing: border-box;
-  padding: 1.25em;
+  padding: 0 1.25em;
 }
 /* ============================
 Colour Palette
@@ -126,36 +138,50 @@ Colour Palette
 
 /* ===============================
 TYPOGRAPHY ====================== */
-h1 {
+/* h1 {
 }
 
 h2 {
 }
 
 h3 {
-}
-/* ===============================
-LAYOUT ====================== */
-img {
-  height: 4.5em;
-  border-radius: 50%;
-}
-.ctnr {
-  padding-top: 0;
-  /* overflow: hidden; */
-  /* background-color: #cbf3f0; */
+} */
+
+.crossed-out {
+  text-decoration: line-through;
+  color: #f97443;
 }
 
-/* header */
+/* ===============================
+============ LAYOUT ==============
+=============================== */
+
+img {
+  height: 1.25em;
+  border-radius: 50%;
+}
+
+/* ----- header ----- */
 
 .logo {
   margin: 0;
+  border-radius: 50%;
 }
 .logo a {
   text-decoration: none;
 }
 
-/* Navigation */
+/* ----- Navigation ----- */
+.ctnr-top {
+  height: 120px;
+  background-color: #ff9f1c;
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  justify-content: left;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -166,11 +192,60 @@ nav a {
   text-decoration: none;
 }
 
-/* Hero */
-.ctnr-title {
-  background-image: url("../img/hero1.jpg");
+/* ----- Hero ----- */
+.ctnr-hero {
+  background-image: url("https://images.pexels.com/photos/3311537/pexels-photo-3311537.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ctnr-hero h1 {
+  font-size: 2em;
+  margin: 0.6em 0 0 0;
+}
+.ctnr-hero p {
+  margin-bottom: 1em;
+}
+
+/* ----- About ----- */
+.about {
+  background-color: #cbf3f0;
+}
+
+.connect ul {
+  list-style: none;
+}
+.connect a {
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- Projects ----- */
+.projects {
+  background-color: #2ec4b6;
+}
+
+/* ----- Contact ----- */
+.contact {
+  background-color: #ff9f1c;
+}
+/* ----- Footer ----- */
+footer {
+  background-color: bisque;
+}
+.footer-list ul {
+  list-style: none;
+}
+.footer-list a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ==========================================================================
@@ -261,7 +336,11 @@ nav a {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+@media (max-width: 520px) {
+  .top-name {
+    display: none;
+  }
+}
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
