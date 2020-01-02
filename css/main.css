@@ -156,40 +156,71 @@ h3 {
 ============ LAYOUT ==============
 =============================== */
 
-img {
+.top-logo img {
   height: 1.25em;
+  border-radius: 50%;
+}
+.about-logo img {
+  height: 7em;
   border-radius: 50%;
 }
 
 /* ----- header ----- */
 
-.logo {
+.top-logo {
   margin: 0;
   border-radius: 50%;
 }
-.logo a {
+.top-logo a {
   text-decoration: none;
 }
 
 /* ----- Navigation ----- */
+/* --- Logo & Name --- */
+
+/* --- Nav --- */
 .ctnr-top {
+  width: auto;
+  margin: 0 auto;
   height: 120px;
   background-color: #ff9f1c;
   display: flex;
-  align-items: center;
-}
-.nav-list {
   justify-content: left;
+  align-items: center;
+  text-align: left;
 }
 
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  /* -webkit-box-flex: 1;
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%; */
+}
+.nav-list li {
+  margin: 0 1.5em 0 0;
+  padding: 0;
+}
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-
 nav a {
   text-decoration: none;
+}
+
+/* --- Social Top --- TO VERIFY before deployment ---*/
+.top-social {
+  -webkit-box-flex: 0;
+  flex: 0 0 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 150px;
+  padding-top: 2px;
+  text-align: right;
 }
 
 /* ----- Hero ----- */
@@ -219,6 +250,9 @@ nav a {
 
 .connect ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
 }
 .connect a {
   list-style: none;
@@ -339,6 +373,14 @@ footer {
 @media (max-width: 520px) {
   .top-name {
     display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .top-social {
+    display: none;
+  }
+  .nav-list {
+    text-align: right;
   }
 }
 @media only screen and (min-width: 35em) {
