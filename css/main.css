@@ -103,13 +103,11 @@ textarea {
   margin: 0;
   padding: 0;
 }
-/* heading: Proza Libre */
-/* body: Open Sans*/
 html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
+  /* margin: 0; */
 }
 
 body {
@@ -123,6 +121,9 @@ body {
 .ctnr {
   width: 100%;
   padding: 0 1.25em;
+}
+.btn {
+  margin: 1em;
 }
 
 /* ============================
@@ -138,6 +139,9 @@ Colour Palette
 
 /* ===============================
 TYPOGRAPHY ====================== */
+/* heading: Proza Libre
+body: Open Sans*/
+
 /* h1 {
 }
 
@@ -171,23 +175,26 @@ a {
   height: 7em;
   border-radius: 50%;
 }
+.hero img {
+  /* padding-top: ; */
+  height: 10em;
+  border-radius: 50%;
+}
+
 .breaker {
-  border-bottom: 3px dotted grey;
-  margin: 10px 0;
 }
 
 /* ----- header ----- */
 
 .top-logo {
   margin: 0;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   cursor: pointer;
   margin-right: auto;
+  /* font-weight: bolder; */
 }
 
 /* ----- Navigation ----- */
-/* --- Logo & Name --- */
-
 /* --- Nav --- */
 .nav-top {
   display: flex;
@@ -227,9 +234,9 @@ nav ul {
   margin: 0;
   justify-content: flex-end;
 }
-nav a {
-  /* text-decoration: none; */
-}
+/* nav a {
+  text-decoration: none;
+} */
 .nav-links li a:hover {
   color: #f97443;
 }
@@ -246,10 +253,9 @@ nav a {
 
 /* ----- Hero ----- */
 .ctnr-hero {
-  min-height: 55vh;
+  min-height: 40vh;
   background: url("https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
-    center center cover no-repeat;
-  /* height: 100vh; */
+    center center contain no-repeat;
   width: 100%;
 }
 .ctnr-hero h1 {
@@ -262,27 +268,32 @@ nav a {
 
 .hero {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   height: 40vh;
 }
 
 /* ----- About ----- */
 .about {
-  /* background-color: #cbf3f0; */
+  background-color: #cbf3f0;
 }
-.about-logo {
+/* .about-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-figure {
+/* figure {
   padding: 2em 0;
+} */
+.ctnr-about {
+  display: flex;
 }
 .about-text {
+  margin: 2em 0;
   /* line-height: 1.5; */
   display: flex;
   justify-items: center;
@@ -315,20 +326,24 @@ figure {
 .ctnr-projects {
   display: flex;
   /* flex-direction: column; */
+  justify-content: center;
 }
-.hdr-projects,
-p {
+.ctnr-projects article {
   text-align: center;
-  margin: 2em 0;
+  margin: 2em 0 1em 0;
 }
 
 /* ----- Contact ----- */
 .contact {
   background-color: #ff9f1c;
 }
-.hdr-contact {
+.ctnr-contact {
+  display: flex;
+  /* flex-direction: column; */
+}
+.ctnr-contact article {
   text-align: center;
-  margin: 2em;
+  margin: 2em 0 1em 0;
 }
 
 /* ----- Footer ----- */
