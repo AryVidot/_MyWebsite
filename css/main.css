@@ -99,6 +99,7 @@ textarea {
    ========================================================================== */
 /*  -------------- General Style ------------- */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -109,7 +110,6 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -117,14 +117,14 @@ body {
   font-family: "Proza Libre", sans-serif;
   /* font-family: "Open Sans", sans-serif; */
   min-width: 360px;
-  display: block;
+  border: 12px solid #fff;
 }
 
 .ctnr {
   width: 100%;
-  box-sizing: border-box;
   padding: 0 1.25em;
 }
+
 /* ============================
 Colour Palette
 
@@ -146,6 +146,12 @@ h2 {
 
 h3 {
 } */
+li,
+a {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
 
 .crossed-out {
   text-decoration: line-through;
@@ -157,12 +163,17 @@ h3 {
 =============================== */
 
 .top-logo img {
-  height: 1.25em;
+  height: 2em;
+  width: 2em;
   border-radius: 50%;
 }
 .about-logo img {
   height: 7em;
   border-radius: 50%;
+}
+.breaker {
+  border-bottom: 3px dotted grey;
+  margin: 10px 0;
 }
 
 /* ----- header ----- */
@@ -170,29 +181,35 @@ h3 {
 .top-logo {
   margin: 0;
   border-radius: 50%;
-}
-.top-logo a {
-  text-decoration: none;
+  cursor: pointer;
+  margin-right: auto;
 }
 
 /* ----- Navigation ----- */
 /* --- Logo & Name --- */
 
 /* --- Nav --- */
+.nav-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
 .ctnr-top {
-  width: auto;
-  margin: 0 auto;
-  height: 120px;
+  width: 100%;
+  margin: 0;
+  height: 100px;
   background-color: #ff9f1c;
   display: flex;
-  justify-content: left;
+  /* justify-content: left; */
   align-items: center;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .nav-list {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
   /* -webkit-box-flex: 1;
   flex: 1;
   flex-grow: 1;
@@ -200,20 +217,24 @@ h3 {
   flex-basis: 0%; */
 }
 .nav-list li {
-  margin: 0 1.5em 0 0;
+  margin: 0 0 0 1.5em;
   padding: 0;
 }
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
 }
 nav a {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
-
+.nav-links li a:hover {
+  color: #f97443;
+}
 /* --- Social Top --- TO VERIFY before deployment ---*/
-.top-social {
+/* .top-social {
   -webkit-box-flex: 0;
   flex: 0 0 150px;
   flex-grow: 0;
@@ -221,19 +242,15 @@ nav a {
   flex-basis: 150px;
   padding-top: 2px;
   text-align: right;
-}
+} */
 
 /* ----- Hero ----- */
 .ctnr-hero {
-  background-image: url("https://images.pexels.com/photos/3311537/pexels-photo-3311537.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 55vh;
+  background: url("https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
+    center center cover no-repeat;
+  /* height: 100vh; */
+  width: 100%;
 }
 .ctnr-hero h1 {
   font-size: 2em;
@@ -243,42 +260,87 @@ nav a {
   margin-bottom: 1em;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
 /* ----- About ----- */
 .about {
-  background-color: #cbf3f0;
+  /* background-color: #cbf3f0; */
+}
+.about-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  padding: 2em 0;
+}
+.about-text {
+  /* line-height: 1.5; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .connect ul {
+  text-align: center;
   list-style: none;
-  display: flex;
-  justify-content: center;
-  /* align-content: center; */
+  padding: 1.5em 0;
 }
 .connect a {
-  list-style: none;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
+  font-size: large;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* ---- Revisit Button clour ???? --- */
+.connect a:hover {
+  color: red;
 }
 
 /* ----- Projects ----- */
 .projects {
   background-color: #2ec4b6;
 }
+.ctnr-projects {
+  display: flex;
+  /* flex-direction: column; */
+}
+.hdr-projects,
+p {
+  text-align: center;
+  margin: 2em 0;
+}
 
 /* ----- Contact ----- */
 .contact {
   background-color: #ff9f1c;
 }
+.hdr-contact {
+  text-align: center;
+  margin: 2em;
+}
+
 /* ----- Footer ----- */
 footer {
   background-color: bisque;
+  border-bottom: 12px solid #fff;
 }
 .footer-list ul {
   list-style: none;
 }
 .footer-list a {
-  text-decoration: none;
+  /* text-decoration: none; */
   cursor: pointer;
 }
 
