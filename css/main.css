@@ -103,6 +103,9 @@ textarea {
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 16px;
+}
 html,
 body {
   height: 100%;
@@ -165,12 +168,12 @@ a {
 /* ===============================
 ============ LAYOUT ==============
 =============================== */
-
+/* 
 .top-logo img {
   height: 2em;
   width: 2em;
   border-radius: 50%;
-}
+} */
 .about-logo img {
   height: 7em;
   border-radius: 50%;
@@ -180,9 +183,22 @@ a {
   height: 10em;
   border-radius: 50%;
 }
-
-.breaker {
+.top-triangle-projects {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 60px 95vw;
+  border-color: transparent transparent transparent #cbf3f0;
 }
+.top-triangle-contact {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 60px 95vw 0 0;
+  border-color: #2ec4b6 transparent transparent transparent;
+}
+/* .breaker {
+} */
 
 /* ----- header ----- */
 
@@ -214,15 +230,16 @@ a {
   /* text-align: left; */
 }
 
-.nav-list {
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* -webkit-box-flex: 1;
+/* .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
   flex: 1;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 0%; */
-}
+  flex-basis: 0%;
+} */
+
 .nav-list li {
   margin: 0 0 0 1.5em;
   padding: 0;
@@ -234,9 +251,7 @@ nav ul {
   margin: 0;
   justify-content: flex-end;
 }
-/* nav a {
-  text-decoration: none;
-} */
+
 .nav-links li a:hover {
   color: #f97443;
 }
@@ -291,6 +306,7 @@ nav ul {
 } */
 .ctnr-about {
   display: flex;
+  justify-content: center;
 }
 .about-text {
   margin: 2em 0;
@@ -330,7 +346,7 @@ nav ul {
 }
 .ctnr-projects article {
   text-align: center;
-  margin: 2em 0 1em 0;
+  margin: 2em 0;
 }
 
 /* ----- Contact ----- */
@@ -339,17 +355,21 @@ nav ul {
 }
 .ctnr-contact {
   display: flex;
+  justify-content: center;
   /* flex-direction: column; */
 }
 .ctnr-contact article {
   text-align: center;
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 /* ----- Footer ----- */
 footer {
   background-color: bisque;
   border-bottom: 12px solid #fff;
+}
+.ctnr-footer {
+  padding: 1em 0;
 }
 /* .footer-list {
   display: flex;
@@ -458,19 +478,19 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media (max-width: 520px) {
+/* @media (max-width: 520px) {
   .top-name {
     display: none;
   }
-}
-@media (max-width: 1080px) {
+} */
+/* @media (max-width: 1080px) {
   .top-social {
     display: none;
   }
   .nav-list {
     text-align: right;
   }
-}
+} */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
