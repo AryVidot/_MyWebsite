@@ -183,18 +183,19 @@ a {
   height: 10em;
   border-radius: 50%;
 }
-.top-triangle-projects {
+
+.top-triangle-work {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 60px 0 0 95vw;
-  border-color: #cbf3f0 transparent transparent transparent;
+  border-width: 60px 0 0 95.5vw;
+  border-color: #cbf3f0 transparent;
 }
 .top-triangle-contact {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 60px 95vw 0 0;
+  border-width: 60px 93vw 0 0;
   border-color: #2ec4b6 transparent transparent transparent;
 }
 /* .breaker {
@@ -335,18 +336,19 @@ nav ul {
   color: red;
 }
 
-/* ----- Projects ----- */
-.projects {
+/* ----- Work ----- */
+.work {
   background-color: #2ec4b6;
 }
-.ctnr-projects {
+
+.ctnr-work {
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
 }
-.ctnr-projects article {
+.ctnr-work article {
   text-align: center;
-  margin: 2em 0;
+  margin: 1em 0 0;
 }
 
 /* ----- Contact ----- */
@@ -360,7 +362,7 @@ nav ul {
 }
 .ctnr-contact article {
   text-align: center;
-  margin: 1em 0 1em 0;
+  margin: 1em 0 0;
 }
 
 /* ----- Footer ----- */
