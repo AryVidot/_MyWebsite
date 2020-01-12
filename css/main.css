@@ -125,6 +125,7 @@ body {
 .ctnr {
   width: 100%;
   padding: 0 1.25em;
+  display: flex;
 }
 .btn {
   margin: 1em;
@@ -281,6 +282,8 @@ nav ul {
 
 /* ----- Hero ----- */
 .ctnr-hero {
+  display: flex;
+  justify-content: center;
   min-height: 40vh;
   background: url("https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
     center center contain no-repeat;
@@ -296,10 +299,9 @@ nav ul {
 
 .hero {
   display: flex;
-  text-align: center;
   flex-direction: column;
   justify-content: center;
-
+  align-items: center;
   height: 40vh;
 }
 
