@@ -118,7 +118,7 @@ body {
   font-family: "Heebo", sans-serif;
   min-width: 360px;
   height: fit-content;
-  border: 12px solid #fff;
+  border: 0.625em solid #fff;
 }
 
 .ctnr {
@@ -181,19 +181,10 @@ a {
 /* ===============================
 ============ LAYOUT ==============
 =============================== */
-/* 
-.top-logo img {
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
-} */
-.about-logo img {
-  height: 7em;
-  border-radius: 50%;
-}
+
 .hero img {
   /* padding-top: ; */
-  height: 10em;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -250,7 +241,7 @@ a {
 .ctnr-top {
   width: 100%;
   margin: 0;
-  height: 100px;
+  height: 6.25em;
   background-color: #ff9f1c;
   display: flex;
   /* justify-content: left; */
@@ -313,12 +304,12 @@ nav a {
 }
 
 .hero {
-  margin-top: 2.8em;
+  margin: 2em 0 1.5em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
 }
 
 /* ----- About ----- */
