@@ -105,15 +105,13 @@ textarea {
 }
 html {
   font-size: 16px;
-}
-html,
-body {
   height: 100%;
   width: 100%;
-  /* margin: 0; */
 }
 
 body {
+  height: 100%;
+  width: 100%;
   font-size: 1rem;
   font-family: "Heebo", sans-serif;
   min-width: 360px;
@@ -124,7 +122,7 @@ body {
 .ctnr {
   width: 100%;
   padding: 0 1.25em;
-  display: flex;
+  /* display: flex; */
 }
 .btn {
   margin: 1em;
@@ -152,14 +150,12 @@ h1 {
   font-size: 2em;
   margin: 0.6em 0 0.6em 0;
 }
-
 h2 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 1.5em;
   margin-bottom: 0.6em;
 }
-
 h3 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
@@ -171,6 +167,7 @@ a {
   font-family: "Heebo", sans-serif;
   font-weight: 500;
   text-decoration: none;
+  list-style: none;
 }
 
 .crossed-out {
@@ -187,7 +184,9 @@ a {
   height: 100%;
   border-radius: 50%;
 }
-
+.ctnr{
+  margin
+}
 .top-triangle-lab {
   padding: 0;
   margin: 0;
@@ -241,23 +240,13 @@ a {
 .ctnr-top {
   width: 100%;
   margin: 0;
-  height: 6.25em;
+  height: 5em;
   background-color: #ff9f1c;
   display: flex;
   /* justify-content: left; */
   align-items: center;
   /* text-align: left; */
 }
-
-/* .nav-list {
-  display: flex;
-  justify-content: flex-end;
-  -webkit-box-flex: 1;
-  flex: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
-} */
 
 .nav-list li {
   margin: 0 0 0 1.5em;
@@ -359,12 +348,28 @@ nav a {
 }
 
 /* ----- Lab ----- */
-.lab {
-  background-color: #2ec4b6;
+.hello{
+  padding: 2em 0;
+  /* display: flex; */
+}
+.pencil{
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+.lab-shots{
+  padding: 3.5em 0;
 }
 
-.ctnr-lab {
-  display: flex;
+.ctnr-hello {
+  text-align: center;
+  min-height: fit-content;
+  width: 100%;
+  padding: 10px 0;
+}
+
+
+.ctnr-shots {
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -372,6 +377,15 @@ nav a {
 .ctnr-lab article {
   text-align: center;
   margin: 1em 0 0;
+}
+#parallax {
+  background-color: #2ec4b6;
+}
+#magic8Ball{
+  background-color: coral;
+}
+#wordPress{
+  background-color: deeppink;
 }
 
 /* ----- Contact ----- */
@@ -413,6 +427,7 @@ footer {
   /* margin-top: 2em; */
 }
 .copyright {
+  border-top: 1px solid black;
   text-align: center;
   font-size: 0.7em;
   margin-top: 2em;
@@ -506,7 +521,10 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/* @media (max-width: 520px) {
+
+   /* MOBILE FIRST */
+
+   /* @media (max-width: 520px) {
   .top-name {
     display: none;
   }
