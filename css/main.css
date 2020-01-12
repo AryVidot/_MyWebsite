@@ -115,8 +115,7 @@ body {
 
 body {
   font-size: 1rem;
-  font-family: "Proza Libre", sans-serif;
-  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Heebo", sans-serif;
   min-width: 360px;
   height: fit-content;
   border: 12px solid #fff;
@@ -147,17 +146,29 @@ TYPOGRAPHY ====================== */
 /* heading: Proza Libre
 body: Open Sans*/
 
-/* h1 {
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 2em;
+  margin: 0.6em 0 0.6em 0;
 }
 
 h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 0.6em;
 }
 
 h3 {
-} */
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 0.6em;
+}
 li,
 a {
-  font-family: "Proza Libre", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: 500;
   text-decoration: none;
 }
@@ -221,7 +232,10 @@ a {
   /* border-radius: 50%; */
   cursor: pointer;
   margin-right: auto;
-  /* font-weight: bolder; */
+}
+.top-logo a {
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
 }
 
 /* ----- Navigation ----- */
@@ -265,6 +279,10 @@ nav ul {
   margin: 0;
   justify-content: flex-end;
 }
+nav a {
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+}
 
 .nav-links li a:hover {
   color: #f97443;
@@ -284,20 +302,18 @@ nav ul {
 .ctnr-hero {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
-  background: url("https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
-    center center contain no-repeat;
+  align-content: center;
+  min-height: 50vh;
   width: 100%;
 }
-.ctnr-hero h1 {
-  font-size: 2em;
-  margin: 0.6em 0 0 0;
-}
+
 .ctnr-hero p {
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .hero {
+  margin-top: 2.8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,9 +401,11 @@ nav ul {
 /* ----- Footer ----- */
 footer {
   background-color: bisque;
-  border-bottom: 12px solid #fff;
+  border-top: 12px solid #fff;
 }
 .ctnr-footer {
+  display: flex;
+  flex-direction: column;
   padding: 1em 0;
 }
 /* .footer-list {
