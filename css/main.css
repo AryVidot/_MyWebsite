@@ -279,19 +279,26 @@ nav a {
 } */
 
 /* ----- Hero ----- */
-.ctnr-hero {
+/* .ctnr-hero {
   display: flex;
   justify-content: center;
   align-content: center;
   min-height: 50vh;
   width: 100%;
+} */
+.ctnr-hero {
+  text-align: center;
+  min-height: fit-content;
+  width: 100%;
+  padding: 10px 0;
+  min-height: 50vh;
 }
 
 .ctnr-hero p {
   margin-bottom: 1em;
   text-align: center;
 }
-
+/* 
 .hero {
   margin: 2em 0 1.5em 0;
   display: flex;
@@ -299,6 +306,10 @@ nav a {
   justify-content: center;
   align-items: center;
   height: 50vh;
+} */
+.hero{
+  padding: 2em 0;
+
 }
 
 /* ----- About ----- */
