@@ -279,13 +279,7 @@ nav a {
 } */
 
 /* ----- Hero ----- */
-/* .ctnr-hero {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  min-height: 50vh;
-  width: 100%;
-} */
+
 .ctnr-hero {
   text-align: center;
   min-height: fit-content;
@@ -298,6 +292,9 @@ nav a {
   margin-bottom: 1em;
   text-align: center;
 }
+.ctnr-hero img{
+  width: 15.6em;
+}
 /* 
 .hero {
   margin: 2em 0 1.5em 0;
@@ -309,7 +306,6 @@ nav a {
 } */
 .hero{
   padding: 2em 0;
-
 }
 
 /* ----- About ----- */
@@ -353,7 +349,7 @@ nav a {
   border-radius: 5px;
 }
 
-/* ---- Revisit Button clour ???? --- */
+/* ---- Revisit Button colour ???? --- */
 .connect a:hover {
   color: red;
 }
