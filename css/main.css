@@ -162,6 +162,7 @@ h3 {
   font-size: 1.1em;
   margin-bottom: 0.6em;
 }
+
 li,
 a {
   font-family: "Heebo", sans-serif;
@@ -184,9 +185,9 @@ a {
   height: 100%;
   border-radius: 50%;
 }
-.ctnr{
+/* .ctnr{
   margin
-}
+} */
 /* .top-triangle-lab {
   padding: 0;
   margin: 0;
@@ -292,7 +293,7 @@ nav a {
   margin-bottom: 1em;
   text-align: center;
 }
-.ctnr-hero img{
+.ctnr-hero img {
   width: 12.5em;
 }
 /* 
@@ -304,7 +305,7 @@ nav a {
   align-items: center;
   height: 50vh;
 } */
-.hero{
+.hero {
   padding: 2em 0;
 }
 
@@ -355,22 +356,35 @@ nav a {
 }
 
 /* ----- Lab ----- */
-.lab{
-  background-color: #FFBF69;
+.lab {
+  background-color: #ffbf69;
 }
 
-.ctnr-lab{
-  padding: .75em 0;
+.ctnr-lab {
+  /* padding: 0.75em 0; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.hello{
+.lab-text {
+  margin: 2em 0;
+  /* line-height: 1.5; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.hello {
   padding: 2em 0;
   /* display: flex; */
 }
-.pencil{
+.pencil {
   border-radius: 50%;
   margin-bottom: 2em;
 }
-.lab-shots{
+
+.lab-shots {
   padding: 2em 0;
 }
 
@@ -394,7 +408,7 @@ nav a {
   width: 100%; */
 
   text-align: center;
-  margin: 1em 0;
+  margin: 1em 0 0;
 }
 
 /* Add random colour for sections with Javascript */
@@ -402,10 +416,10 @@ nav a {
 .parallax {
   background-color: #2ec4b6;
 }
-.magic8Ball{
+.magic8Ball {
   background-color: coral;
 }
-.wordPress{
+.wordPress {
   background-color: deeppink;
 }
 
@@ -424,6 +438,15 @@ nav a {
   margin: 1em 0 0;
 }
 
+.contact-text {
+  margin: 2em 0;
+  /* line-height: 1.5; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 /* ----- Footer ----- */
 footer {
   background-color: bisque;
@@ -543,9 +566,9 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-   /* MOBILE FIRST */
+/* MOBILE FIRST */
 
-   /* @media (max-width: 520px) {
+/* @media (max-width: 520px) {
   .top-name {
     display: none;
   }
