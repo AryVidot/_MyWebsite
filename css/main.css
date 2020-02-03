@@ -17,6 +17,8 @@ html {
   line-height: 1.4;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Heebo|Playfair+Display&display=swap");
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -144,20 +146,23 @@ TYPOGRAPHY ====================== */
 /* heading: Proza Libre
 body: Open Sans*/
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
+}
+
+h1 {
   font-weight: 900;
   font-size: 2em;
   margin: 0.6em 0 0.6em 0;
 }
 h2 {
-  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 1.5em;
   margin-bottom: 0.6em;
 }
 h3 {
-  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 1.1em;
   margin-bottom: 0.6em;
@@ -181,7 +186,6 @@ a {
 =============================== */
 
 .hero img {
-  /* padding-top: ; */
   height: 100%;
   border-radius: 50%;
 }
@@ -232,6 +236,8 @@ a {
 /* ----- Navigation ----- */
 /* --- Nav --- */
 .nav-top {
+  position: sticky;
+  top: 0.625em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -242,7 +248,7 @@ a {
   width: 100%;
   margin: 0;
   height: 5em;
-  background-color: #ff9f1c;
+  background-color: transparent;
   display: flex;
   /* justify-content: left; */
   align-items: center;
@@ -313,16 +319,6 @@ nav a {
 .about {
   background-color: #cbf3f0;
 }
-/* .about-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* figure {
-  padding: 2em 0;
-} */
 .ctnr-about {
   display: flex;
   justify-content: center;
