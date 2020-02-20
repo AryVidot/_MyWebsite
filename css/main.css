@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #2e4057;
   font-size: 1em;
   line-height: 1.4;
   height: 100%;
@@ -116,15 +116,30 @@ body {
   min-width: 360px;
   height: fit-content;
   scroll-behavior: smooth;
+  background-color: #fff;
+  border-left: 0.5em solid #fff;
+  border-bottom: 0.5em solid #fff;
+  border-right: 0.5em solid #fff;
 }
 
 .ctnr {
   width: 100%;
   padding: 0 1.25em;
+  border: 7px solid #bad5df;
+  margin: 7px 0;
 }
 
 .btn {
   margin: 1em;
+  padding: 10px 28px;
+  border: 2px solid #99c24d;
+  border-radius: 8px;
+  text-align: center;
+  color: #99c24d;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 /* ============================
@@ -151,14 +166,30 @@ h3 {
 
 h1 {
   font-weight: 900;
-  font-size: 5em;
-  margin-bottom: 0.6em;
-}
-.im-ary h1 {
+  margin-bottom: 0.6rem;
   font-size: 4.5em;
-  font-weight: bolder;
-  /* margin: 0 0.3em; */
 }
+
+/* .intro {
+  font-size: 1.5em;
+} */
+
+.intro p {
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 0 20px;
+  padding-bottom: 1em;
+  /* margin: 0 20px; */
+}
+
+/* .ctnr-hero p {
+  margin-bottom: 1em;
+  text-align: center;
+  border: 1px solid olive;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+} */
 h2 {
   font-weight: 700;
   font-size: 1.5em;
@@ -192,7 +223,8 @@ textarea {
 }
 
 ::placeholder {
-  color: #ccc;
+  color: #f6b75d;
+  opacity: 0.9;
 }
 
 li,
@@ -205,22 +237,16 @@ a {
 
 .crossed-out {
   text-decoration: line-through;
-  color: #f97443;
+  color: #f18f01;
 }
 
 .active {
-  color: #f97443;
+  color: #f18f01;
 }
 /* ===============================
 ============ LAYOUT ==============
 =============================== */
-.intro p {
-  font-size: large;
-}
-.hero_section_intro {
-  display: flex;
-  flex-direction: column;
-}
+
 .hero img {
   height: 100%;
   border-radius: 50%;
@@ -255,11 +281,12 @@ a {
 }
 
 .ctnr-top {
-  margin: 0.5em 0.5em 0 0.5em;
-  border: 1px red solid;
+  margin-top: 0.5em;
+  border: 1px #b7b8b6 solid;
   padding: 0 1.25em;
   height: 3em;
-  background-color: transparent;
+  background-color: #fff;
+  opacity: 0.9;
   display: flex;
   align-items: center;
 }
@@ -282,7 +309,7 @@ nav a {
 }
 
 .nav-links li a:hover {
-  color: #f97443;
+  color: #f18f01;
 }
 /* --- Social Top --- TO VERIFY before deployment ---*/
 /* .top-social {
@@ -302,26 +329,18 @@ nav a {
   min-height: fit-content;
   width: 100%;
   padding: 0;
-  min-height: 50vh;
-}
-
-.ctnr-hero p {
-  margin-bottom: 1em;
-  text-align: center;
-  border: 1px solid olive;
-  font-size: 800;
-  font-weight: bolder;
+  margin-top: 0;
 }
 
 .hero {
-  padding: 2em 0 2em;
-  height: 70vh;
+  padding: 0;
+  height: fit-content;
 }
 
 /* ----- About ----- */
 .about {
-  background-color: #cbf3f0;
-  border: 1px solid red;
+  background-color: #048ba8;
+  /* border: 1px solid red; */
 }
 .ctnr-about {
   display: flex;
@@ -356,8 +375,8 @@ nav a {
 
 /* ----- Lab ----- */
 .lab {
-  background-color: #ffbf69;
-  border: 1px solid blue;
+  background-color: #f18f01;
+  /* border: 1px solid blue; */
 }
 
 .ctnr-lab {
@@ -425,7 +444,8 @@ nav a {
 
 /* ----- Contact ----- */
 .contact {
-  background-color: #ff9f1c;
+  background-color: #2f2d2e;
+  color: #048ba8;
 }
 .ctnr-contact {
   display: flex;
@@ -449,13 +469,13 @@ nav a {
 }
 /* ----- Footer ----- */
 footer {
-  background-color: bisque;
-  border-top: 12px solid #fff;
+  background-color: #fff;
+  /* border-top: 12px solid #fff; */
 }
 .ctnr-footer {
   display: flex;
   flex-direction: column;
-  padding: 1em 0;
+  padding: 0;
 }
 /* .footer-list {
   display: flex;
@@ -464,7 +484,7 @@ footer {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  /* margin-top: 1em; */
+  margin-top: 1em;
 }
 .footer-list a {
   cursor: pointer;
@@ -474,7 +494,7 @@ footer {
   /* border-top: 1px solid black; */
   text-align: center;
   font-size: 0.7em;
-  margin-top: 2em;
+  margin: 1em 0;
 }
 
 /* ==========================================================================
