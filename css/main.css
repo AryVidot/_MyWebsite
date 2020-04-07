@@ -622,7 +622,26 @@ footer {
 
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  textarea.user_name {
+    height: auto;
+    overflow: hidden;
+    padding: 0.625em 0;
+    overflow-wrap: break-word;
+  }
+
+  textarea {
+    background: none;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    resize: none !important;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 1.5em;
+    text-align: center;
   }
 }
 
