@@ -141,9 +141,13 @@ body {
   height: fit-content;
   scroll-behavior: smooth;
   background-color: var(--primary-clr);
-  border-left: 0.5em solid #e9f1f7;
-  border-bottom: 0.5em solid #e9f1f7;
-  border-right: 0.5em solid #e9f1f7;
+  border-left: 0.5em solid;
+  border-left-color: var(--primary-clr);
+  border-bottom: 0.5em solid;
+  border-bottom-color: var(--primary-clr);
+  border-right: 0.5em solid;
+  border-right-color: var(--primary-clr);
+
 }
 
 .ctnr {
@@ -382,7 +386,7 @@ nav a {
 
 /* ----- About ----- */
 .about {
-  background-color: #e7dfc6;
+  background-color: var(--secondary-clr);
   /* border: 1px solid red; */
 }
 .ctnr-about {
@@ -408,19 +412,16 @@ nav a {
 
 /* ----- Lab ----- */
 .lab {
-  background-color: #e7dfc6;
-  /* border: 1px solid blue; */
+  background-color: var(--secondary-clr);
 }
 
-.ctnr-lab {
-  /* padding: 0.75em 0; */
+.ctnr-lab .hello{
   display: flex;
   justify-content: center;
   width: 100%;
 }
 .lab-text {
   margin: 2em 0;
-  /* line-height: 1.5; */
   display: flex;
   justify-items: center;
   align-items: center;
@@ -429,7 +430,6 @@ nav a {
 }
 .hello {
   padding: 2em 0;
-  /* display: flex; */
 }
 .pencil {
   border-radius: 50%;
@@ -477,7 +477,7 @@ nav a {
 
 /* ----- Contact ----- */
 .contact {
-  background-color: #e7dfc6;
+  background-color: var(--secondary-clr);
   color: var(--fc-1);
 }
 .ctnr-contact {
