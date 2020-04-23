@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #2274a5;
+  color: var(--fc-1);
   font-size: 16px;
   line-height: 1.4;
   height: 100%;
@@ -108,15 +108,39 @@ textarea {
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
+:root{
+  --ff-primary: "Heebo", sans-serif;
+  --ff-secondary: "Playfair Display", serif;
+
+  --fc-1: #2274a5;
+  --fc-2: #ca2e55;
+
+  --primary-clr: #e9f1f7;
+  --secondary-clr: #e7dfc6;
+
+  --fw-2:
+  /* font-weight h2 */
+  --fw-3:
+    /* font-weight h3 */
+  --fw-p:
+    /* font-weight p */
+
+  --fs-2:
+  --fs-3:
+  --fs-p:
+
+}
+
+
 
 body {
   width: 100%;
   font-size: 1rem;
-  font-family: "Heebo", sans-serif;
+  font-family: var(--ff-primary);
   min-width: 360px;
   height: fit-content;
   scroll-behavior: smooth;
-  background-color: #e9f1f7;
+  background-color: var(--primary-clr);
   border-left: 0.5em solid #e9f1f7;
   border-bottom: 0.5em solid #e9f1f7;
   border-right: 0.5em solid #e9f1f7;
@@ -132,10 +156,11 @@ body {
 .btn {
   margin: 1em;
   padding: 0.625em 1.75em;
-  border: 2px solid #ca2e55;
+  border: 2px solid;
+  border-color: var(--fc-2);
   border-radius: 8px;
   text-align: center;
-  color: #ca2e55;
+  color: var(--fc-2);
 }
 
 .btn:hover {
@@ -161,7 +186,7 @@ body: Open Sans*/
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--ff-secondary);
 }
 
 h1 {
@@ -170,9 +195,9 @@ h1 {
   font-size: 4rem;
 }
 
-/* .intro {
-  font-size: 1.5em;
-} */
+.dot{
+  color: var(--fc-2);
+}
 
 .intro p {
   font-size: 1.5rem;
@@ -224,7 +249,7 @@ textarea {
 }
 
 ::placeholder {
-  color: #ca2e55;
+  color: var(--fc-2);
   opacity: 0.9;
 }
 /* input:not(::placeholder-shown) {
@@ -233,7 +258,7 @@ textarea {
 
 li,
 a {
-  font-family: "Heebo", sans-serif;
+  font-family: var(--ff-primary);
   font-weight: 500;
   text-decoration: none;
   list-style: none;
@@ -241,36 +266,34 @@ a {
 
 .crossed-out {
   text-decoration: line-through;
-  color: #ca2e55;
+  color: var(--fc-2);
 }
 
 .active {
-  color: #ca2e55;
+  color: var(--fc-2);
 }
+
 /* ===============================
 ============ LAYOUT ==============
 =============================== */
 
-.hero img {
+/* .hero img {
   height: 100%;
   border-radius: 50%;
-}
-
-/* .breaker {
 } */
 
 /* ----- header ----- */
 .top-logo {
   margin: 0;
-  /* border-radius: 50%; */
   cursor: pointer;
   margin-right: auto;
 }
 
 .top-logo a {
-  font-family: "Playfair Display", sans-serif;
+  font-family: var(--ff-secondary);
   font-weight: bolder;
-  /* letter-spacing: 0.1rem; */
+  letter-spacing: 0.1rem;
+  color: var(--fc-1);
 }
 
 /* ----- Navigation ----- */
@@ -290,8 +313,6 @@ a {
   margin-bottom: 0.75em;
   border-bottom: 1px #b7b8b6 solid;
   border-top: 1px #b7b8b6 solid;
-  /* border: 1px solid #fff; */
-  /* border-radius: 4px; */
   padding: 0 1.25em;
   height: 3em;
   background-color: #fff;
@@ -313,13 +334,14 @@ nav ul {
 }
 
 nav a {
-  font-family: "Playfair Display", sans-serif;
+  font-family: var(--ff-secondary);
   font-weight: bolder;
+  color: var(--fc-1);
   /* letter-spacing: 0.1rem; */
 }
 
 .nav-links li a:hover {
-  color: #ca2e55;
+  color: var(--fc-2);
 }
 /* --- Social Top --- TO VERIFY before deployment ---*/
 /* .top-social {
@@ -456,7 +478,7 @@ nav a {
 /* ----- Contact ----- */
 .contact {
   background-color: #e7dfc6;
-  color: #2274a5;
+  color: var(--fc-1);
 }
 .ctnr-contact {
   display: flex;
@@ -480,7 +502,7 @@ nav a {
 }
 /* ----- Footer ----- */
 footer {
-  background-color: #e7dfc6;
+  background-color: var(--secondary-clr);
   /* border-top: 12px solid #fff; */
 }
 .ctnr-footer {
