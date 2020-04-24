@@ -199,9 +199,6 @@ h1 {
   font-size: 4rem;
 }
 
-.dot{
-  color: var(--fc-2);
-}
 
 .intro p {
   font-size: 1.5rem;
@@ -230,6 +227,11 @@ h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6em;
 }
+
+.dot, span{
+  color: var(--fc-2);
+}
+
 /* TEXT Area set up */
 
 textarea.user_name {
