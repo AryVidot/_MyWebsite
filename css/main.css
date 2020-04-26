@@ -131,13 +131,13 @@ textarea {
   --fs-p:
 
   /* spacer - padding and margin */
---spacer: 1rem;
+/* --spacer: 1rem;
 --spacer-md: calc(var(--spacer)*2);
 --spacer-lg: calc(var(--spacer)*3);
 
 --shadow: 0 0 1em rgba(0,0,0,.25);
 --br-img: 50%;
---br: 8px;
+--br: 8px; */
 
 }
 
