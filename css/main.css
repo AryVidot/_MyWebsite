@@ -354,6 +354,8 @@ nav a {
   font-family: var(--ff-secondary);
   font-weight: bolder;
   color: var(--fc-1);
+  letter-spacing: 0.1rem;
+
   /* letter-spacing: 0.1rem; */
 }
 
