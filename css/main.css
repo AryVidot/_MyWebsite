@@ -427,7 +427,13 @@ nav a {
 .lab {
   background-color: var(--secondary-clr);
 }
+figure{
+  padding-top: 2em;
+}
 
+.info{
+  padding-bottom: 2em;
+}
 .ctnr-lab .hero{
   display: flex;
   justify-content: center;
@@ -450,42 +456,33 @@ nav a {
 }
 
 .lab-shots {
-  padding: 2em 0;
-}
-
-.ctnr-hello {
-  text-align: center;
-  min-height: fit-content;
-  width: 100%;
-  padding: 0.625em 0;
+  display: flex;
 }
 
 .ctnr-shots {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   width: 100%;
 }
-.ctnr-lab article {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%; */
 
+.ctnr-shots article {
+  padding: 2em 0; 
   text-align: center;
   margin: 1em 0 0;
 }
 
 /* Add random colour for sections with Javascript */
 
-.parallax {
+/* .parallax {
   background-color: #2ec4b6;
 }
 .magic8Ball {
   background-color: coral;
 }
 .wordPress {
-  background-color: deeppink;
+  background-color: deeppink; */
 }
 
 /* ----- Contact ----- */
