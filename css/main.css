@@ -434,6 +434,17 @@ figure{
 .info{
   padding-bottom: 2em;
 }
+.shot-info p{
+  padding-bottom: 1.5em;
+  display: flex;
+}
+
+/* .shot-info ul li{
+display: flex;
+justify-content: center;
+flex-direction: row;
+} */
+
 .ctnr-lab .hero{
   display: flex;
   justify-content: center;
