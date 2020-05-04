@@ -441,16 +441,18 @@ figure{
   padding-bottom: 2em;
 }
 
-.shot-info p{
-  padding-bottom: 1.5em;
+.shot-info{
   display: flex;
+  flex-direction: column;
 }
 
-/* .shot-info ul li{
-display: flex;
-justify-content: center;
-flex-direction: row;
-} */
+.shot-info p{
+  padding-bottom: 1.5em;
+}
+
+.shot-info ul li{
+  display: inline-block;
+}
 
 .ctnr-lab .hero{
   display: flex;
@@ -491,9 +493,13 @@ flex-direction: row;
   text-align: center;
   /* margin: 1em 0 0; */
 }
+
 .shot{
   margin-bottom: 1.25em;
 }
+
+
+
 .tech-logo{
   width: 1.875em;
   height: 1.875em;
