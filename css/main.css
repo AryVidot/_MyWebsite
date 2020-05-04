@@ -294,11 +294,6 @@ a {
 ============ LAYOUT ==============
 =============================== */
 
-/* .hero img {
-  height: 100%;
-  border-radius: 50%;
-} */
-
 /* ----- header ----- */
 .top-logo {
   margin: 0;
@@ -424,16 +419,28 @@ nav a {
 }
 
 /* ----- Lab ----- */
+
 .lab {
   background-color: var(--secondary-clr);
 }
+
 figure{
   padding-top: 2em;
 }
-
+.links{
+  border-radius: 10px;
+  border: 10px solid;
+  border-color: var(--secondary-clr) ;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 200px;
+  /* text-align: center; */
+  /* margin-bottom: 50px; */
+}
 .info{
   padding-bottom: 2em;
 }
+
 .shot-info p{
   padding-bottom: 1.5em;
   display: flex;
@@ -463,7 +470,6 @@ flex-direction: row;
 .pencil {
   border-radius: 50%;
   margin-bottom: 2em;
-  /* padding-top: 20px; */
 }
 
 .lab-shots {
@@ -484,6 +490,10 @@ flex-direction: row;
   margin: 1em 0 0;
 }
 
+.tech-logo{
+  width: 30px;
+  height: 30PX;
+}
 /* Add random colour for sections with Javascript */
 
 /* .parallax {
