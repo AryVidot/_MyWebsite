@@ -428,12 +428,12 @@ figure{
   padding-top: 2em;
 }
 .links{
-  border-radius: 10px;
-  border: 10px solid;
+  border-radius: 0.625em;
+  border: 0.625em solid;
   border-color: var(--secondary-clr) ;
   /* justify-content: center; */
   /* align-items: center; */
-  height: 200px;
+  height: 12.5em;
   /* text-align: center; */
   /* margin-bottom: 50px; */
 }
@@ -468,6 +468,8 @@ flex-direction: row;
 }
 
 .pencil {
+  height: 6.25em;
+  width: 6.25em;
   border-radius: 50%;
   margin-bottom: 2em;
 }
@@ -487,12 +489,14 @@ flex-direction: row;
 .ctnr-shots article {
   padding: 2em 0; 
   text-align: center;
-  margin: 1em 0 0;
+  /* margin: 1em 0 0; */
 }
-
+.shot{
+  margin-bottom: 1.25em;
+}
 .tech-logo{
-  width: 30px;
-  height: 30PX;
+  width: 1.875em;
+  height: 1.875em;
 }
 /* Add random colour for sections with Javascript */
 
