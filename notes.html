@@ -19,6 +19,14 @@
       href="https://fonts.googleapis.com/css?family=Heebo|Playfair+Display:900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const yrSpan = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        yrSpan.textContent = currentYear;
+      });
+    </script>
+
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -113,8 +121,8 @@
           </div>
           <div class="copyright">
             <p>
-              2019 - <a href="www.aryvidot.com">Ary Vidot</a>. All rights
-              reserved
+              <span class="year">2019</span> -
+              <a href="www.aryvidot.com">Ary Vidot</a>. All rights reserved
             </p>
           </div>
         </div>

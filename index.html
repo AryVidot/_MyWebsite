@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Place favicon.ico in the root directory -->
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -16,6 +19,13 @@
       href="https://fonts.googleapis.com/css?family=Heebo|Playfair+Display:900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const yrSpan = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        yrSpan.textContent = currentYear;
+      });
+    </script>
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -35,7 +45,10 @@
               <li>
                 <a class="" href="lab.html">Lab<span class="dot">.</span></a>
               </li>
-              <li><a class="" href="notes.html">Notes</a></li>
+              <!-- <li>
+                <a class="" href="notes.html" style="display: hidden;">Notes</a>
+              </li> -->
+              <li><a class="" href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -134,7 +147,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="ctnr ctnr-contact">
           <article>
             <div class="contact-text">
