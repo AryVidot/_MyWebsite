@@ -1,3 +1,7 @@
 // Navbar scroll Transparent to solid effect
 
-// Footer Automatic Year update
+// Intro Typing effect
+
+// const texts = ["web developer", "thinker", "husband & father"]
+// let count = 0;
+// let index = 0;

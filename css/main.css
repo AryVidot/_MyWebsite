@@ -194,8 +194,6 @@ Colour Palette
 
 /* ===============================
 TYPOGRAPHY ====================== */
-/* heading: Proza Libre
-body: Open Sans*/
 
 h1,
 h2,
@@ -214,18 +212,8 @@ h1 {
   font-size: 1.5rem;
   font-weight: 900;
   padding: 0 0 1.5em 0;
-  /* padding: 1em; */
-  /* margin: 0 20px; */
 }
 
-/* .ctnr-hero p {
-  margin-bottom: 1em;
-  text-align: center;
-  border: 1px solid olive;
-  font-size: 30px;
-  font-weight: bold;
-  width: 100%;
-} */
 h2 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -269,9 +257,6 @@ textarea {
   color: var(--fc-2);
   opacity: 0.9;
 }
-/* input:not(::placeholder-shown) {
-  color: #f6b75d;
-} */
 
 li,
 a {
@@ -385,7 +370,32 @@ nav a {
 /* .hero_section_intro {
   mix-blend-mode: difference;
 } */
+/* .intro{
+  display: flex;
+}
+.typing{
+  position: relative;
+  margin-left: 0.625em;
+}
 
+.typing::after{
+  content: " ";
+  position: absolute;
+  width: 0.0625em;
+  height: 60%;
+  border-right: 0.125em solid;
+  border-bottom-color: var(--fc-1);
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+} */
 .hero {
   padding: 0;
   /* height: fit-content; */
@@ -689,7 +699,7 @@ footer {
   html {
     font-size: 2rem;
   }
-  textarea.user_name {
+  textarea#user_name {
     height: auto;
     overflow: hidden;
     padding: 0.625em 0;
