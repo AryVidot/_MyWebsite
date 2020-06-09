@@ -115,7 +115,8 @@ textarea {
   --fc-1: #2274a5;
   --fc-2: #ca2e55;
 
-  --primary-clr: #e9f1f7;
+  /* --primary-clr: #e9f1f7; */
+  --primary-clr: #000;
   --secondary-clr: #e7dfc6;
 
   --fw-2:
